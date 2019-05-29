@@ -21,7 +21,7 @@ multiplier la première variable avec la deuxième, afficher le résultat et dé
     <?php
     $var = 43;
     for ($x = 100; $x >= 10; $x--) {
-      echo "<p> Multiplication de $x et de $var = ".$x*$var."</p>";
+      echo '<p> Multiplication de '.$x.' et de '.$var.' = '.$x*$var.'</p>';
     }
     ?>
   </div>

@@ -17,7 +17,7 @@
       <!-- Balise signifiant que la suite est en PHP -->
       <?php
       for ($x = 1; $x <= 100; $x=$x+15) {
-        echo "<p>On tient le bambou !</p>";
+        echo '<p>On tient le bambou !</p>';
       }
       ?>
   </div>

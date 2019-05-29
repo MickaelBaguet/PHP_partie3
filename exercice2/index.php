@@ -20,7 +20,7 @@ Tant que la première variable n'est pas supérieure à 20 : multiplier la premi
     <?php
     $var = 43;
     for ($x = 0; $x <= 20; $x++) {
-      echo "<p> Multiplication de $x et de $var = ".$x*$var."</p>";
+      echo '<p> Multiplication de '.$x.' et de '.$var.' = '.$x*$var.'</p>';
     }
     ?>
   </div>

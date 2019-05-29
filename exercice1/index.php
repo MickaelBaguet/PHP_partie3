@@ -19,7 +19,7 @@ Tant que cette variable n'atteint pas 10, il faut l'afficher et l'incrementer.
     <!-- Balise signifiant que la suite est en PHP -->
     <?php
     for ($x = 0; $x <= 10; $x++) {
-      echo "<p>Le nombre est égale à $x</p>";
+      echo '<p>Le nombre est égale à '.$x.'</p>';
     }
     ?>
   </div>

@@ -17,7 +17,7 @@
       <!-- Balise signifiant que la suite est en PHP -->
       <?php
       for ($x = 200; $x >= 0; $x=$x-12) {
-        echo "<p>Enfin !!!</p>";
+        echo '<p>Enfin !!!</p>';
       }
       ?>
   </div>

@@ -17,7 +17,7 @@
       <!-- Balise signifiant que la suite est en PHP -->
       <?php
       for ($x = 1; $x <= 15; $x++) {
-        echo "<p>On y arrive presque</p>";
+        echo '<p>On y arrive presque</p>';
       }
       ?>
   </div>

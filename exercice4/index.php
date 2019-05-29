@@ -20,7 +20,7 @@ l'afficher et l'incrementer de la moitié de sa valeur
       <!-- Balise signifiant que la suite est en PHP -->
       <?php
       for ($x = 1; $x <= 10; $x=$x+($x/2)) {
-        echo "<p>Le nombre est égale à $x</p>";
+        echo '<p>Le nombre est égale à '.$x.'</p>';
       }
     ?>
   </div>
