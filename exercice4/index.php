@@ -12,17 +12,20 @@
         <h1 class="display-3">Exercice 4 - PHP</h1>
         <h3>Partie 2</h3>
         <p class="lead">Créer une variable et l'initialiser à 1.
-Tant que cette variable n'atteint pas 10, il faut :
-l'afficher et l'incrementer de la moitié de sa valeur
-</p>
+        Tant que cette variable n'atteint pas 10, il faut :
+        l'afficher et l'incrementer de la moitié de sa valeur
+        </p>
       </div>
     </div>
       <!-- Balise signifiant que la suite est en PHP -->
+      <!-- On split toujours le php pour l'insertion de saut de ligne -->
       <?php
-      for ($x = 1; $x <= 10; $x=$x+($x/2)) {
-        echo '<p>Le nombre est égale à '.$x.'</p>';
-      }
-    ?>
+        for ($x = 1; $x <= 10; $x+=$x/2) {
+      ?>
+          <p>Le nombre est égale à <?=$x?></p>
+      <?php
+        }
+      ?>
   </div>
 </body>
 </html>

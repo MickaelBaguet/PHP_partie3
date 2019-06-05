@@ -11,18 +11,24 @@
       <div class="container">
         <h1 class="display-3">Exercice 3 - PHP</h1>
         <h3>Partie 2</h3>
-        <p class="lead">Créer deux variables. Initialiser la première à 100 et la deuxième avec un nombre compris en 1 et 100.
-Tant que la première variable n'est pas inférieure ou égale à 10 :
-multiplier la première variable avec la deuxième, afficher le résultat et décrémenter la première variable
-</p>
+        <p class="lead">Créer deux variables. Initialiser la première à 100 et la deuxième
+          avec un nombre compris en 1 et 100. Tant que la première variable n'est pas
+          inférieure ou égale à 10 : multiplier la première variable avec la deuxième,
+          afficher le résultat et décrémenter la première variable
+        </p>
       </div>
     </div>
     <!-- Balise signifiant que la suite est en PHP -->
     <?php
-    $var = 43;
-    for ($x = 100; $x >= 10; $x--) {
-      echo '<p> Multiplication de '.$x.' et de '.$var.' = '.$x*$var.'</p>';
-    }
+      // Nombre random entre 1 et 100
+      $var = rand(1, 100);
+      // Décrémentation de la boucle for
+      for ($x = 100; $x >= 10; $x--):
+    ?>
+    <!-- On segmente le php afin de pouvoir insérer une balise <p> (permet saut de ligne, mise en page tout ça tout ça) -->
+    <p> Multiplication de <?=$var?> et de <?=$x?> = <?=$x*$var?></p>
+    <?php
+      endfor;
     ?>
   </div>
 </body>

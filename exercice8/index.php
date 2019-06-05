@@ -10,15 +10,18 @@
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-3">Exercice 8 - PHP</h1>
-        <h3>Partie 2</h3>
-        <p class="lead">En allant de 200 à 0 avec un pas de 12, afficher le message Enfin !!!!.</p>
+        <h2>Partie 2</h2>
+        <p class="lead">En allant de 200 à 0 avec un pas de 12,
+          afficher le message Enfin !!!!.</p>
       </div>
     </div>
       <!-- Balise signifiant que la suite est en PHP -->
       <?php
-      for ($x = 200; $x >= 0; $x=$x-12) {
-        echo '<p>Enfin !!!</p>';
-      }
+        for ($x = 200; $x >= 0; /*$x-=12*/ $x = $x-12) {
+      ?>
+          <p>Enfin !!!</p>
+      <?php
+        }
       ?>
   </div>
 </body>

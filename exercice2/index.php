@@ -11,17 +11,22 @@
       <div class="container">
         <h1 class="display-3">Exercice 2 - PHP</h1>
         <h3>Partie 3</h3>
-        <p class="lead">Créer deux variables. Initialiser la première à 0 et la deuxième avec un nombre compris en 1 et 100.
-Tant que la première variable n'est pas supérieure à 20 : multiplier la première variable avec la deuxième,afficher le résultat et incrementer la première variable
-</p>
+        <p class="lead">Créer deux variables. Initialiser la première à 0 et la deuxième
+          avec un nombre compris en 1 et 100. Tant que la première variable n'est pas supérieure à 20 :
+          multiplier la première variable avec la deuxième,afficher le résultat et
+          incrementer la première variable.
+        </p>
       </div>
     </div>
     <!-- Balise signifiant que la suite est en PHP -->
     <?php
-    $var = 43;
-    for ($x = 0; $x <= 20; $x++) {
-      echo '<p> Multiplication de '.$x.' et de '.$var.' = '.$x*$var.'</p>';
-    }
+      $var = rand(1,100);
+      for ($x = 0; $x <= 20; $x++) {
+    ?>
+    <!-- On segmente le php afin de pouvoir insérer une balise <p> -->
+    <p> Multiplication de <?= $var ?> et de <?= $x ?> = <?= $x*$var ?></p>
+    <?php
+      }
     ?>
   </div>
 </body>

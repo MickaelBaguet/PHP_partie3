@@ -11,14 +11,19 @@
       <div class="container">
         <h1 class="display-3">Exercice 5 - PHP</h1>
         <h3>Partie 2</h3>
-        <p class="lead">En allant de 1 à 15 avec un pas de 1, afficher le message On y arrive presque.</p>
+        <p class="lead">En allant de 1 à 15 avec un pas de 1,
+            afficher le message On y arrive presque.</p>
       </div>
     </div>
-      <!-- Balise signifiant que la suite est en PHP -->
       <?php
-      for ($x = 1; $x <= 15; $x++) {
-        echo '<p>On y arrive presque</p>';
-      }
+        // Balise signifiant que la suite est en PHP
+        // On split le php pour le saut de ligne
+        $var = 42;
+        for ($x = 1; $x <= 15; $x++) {
+      ?>
+          <p>On y arrive presque <?=$var+$x?></p>
+      <?php
+        }
       ?>
   </div>
 </body>

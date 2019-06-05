@@ -11,13 +11,16 @@
       <div class="container">
         <h1 class="display-3">Exercice 6 - PHP</h1>
         <h3>Partie 2</h3>
-        <p class="lead">En allant de 20 à 0 avec un pas de 1, afficher le message C'est presque bon.</p>
+        <p class="lead">En allant de 20 à 0 avec un pas de 1,
+          afficher le message: C'est presque bon.</p>
       </div>
     </div>
       <!-- Balise signifiant que la suite est en PHP -->
       <?php
         for ($x = 20; $x >= 0; $x--) {
-          echo '<p>C\'est presque bon</p>';
+      ?>
+          <p>C'est presque bon !</p>
+      <?php
         }
       ?>
   </div>
